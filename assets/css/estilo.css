@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(177, 136, 187);
+    color: rgb(34, 33, 33);
+    font-size: 16px ;
+}
+
+body.inverContraste{
+    background-color: rgb(3, 3, 30);
+    color: rgb(255, 255, 255);
+}
+
+body.fuenteBig{
+    font-size: 25px;
+}
+
+
+
+header {
+    background-color: rgb(135, 66, 152);
+    color: rgb(179, 128, 1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+a{
+    color:  rgb(179, 128, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);}
+
+main {
+    padding: 40px;
+}
+
+#inicio {
+    background-color:rgb(187, 162, 193);
+    padding: 50px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#tablaform {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(217, 188, 224);
+    border-radius: 4px;
+}
+
+#registro {
+    margin-top: 20px;
+    background-color:rgb(187, 162, 193);
+    padding: 50px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+label, input, select, textarea{
+    display: block;
+    margin: 5px;
+
+}
+
+button{
+    background-color: rgb(179, 128, 1);
+}
+
+#contacto {
+    background-color:rgb(187, 162, 193);
+    padding: 50px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+

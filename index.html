@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="assets/js/Firebase.js" type="module"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>STAR Music</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button id="btnContraste">Contraste</button>
+            <button id="btnFuente">Fuente</button>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <h3>Bienvenido a STARMusic</h3>
+            <p>¿Eres un amante de la musica con ganas de conectar con otros musicos y compartir tus creaciones? En STARMusic podras mostrar tu talento, compartir colaboraciones y ser parte de esta gran comunidad unida por la musica.</p>
+            <p>Ya seas un principiante que esta dando sus primeros pasos, o un experto buscando nuevos desafios, aqui encontraras el lugar perfecto para expresarte. ¡Registra tus proyectos, explora las ideas de otros, y deja que el ritmo te lleve a nuevas oportunidades!</p>
+            <p>¡Empieza ahora y registra tus proyectos!</p>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos Musicales</h2>
+            <table id="tablaform">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Genero</th>
+                        <th>Integrantes</th>
+                        <th>Principiante</th>
+                        <th>Plataformas</th>
+                        <th>Enlace</th>
+                        <th>Fecha</th>
+                        <th>Descripcion</th>
+                        <th>correo</th>
+
+                    </tr>
+                </thead>
+            </table>
+
+
+
+        </section>
+        <section id="registro">
+            <h2>Registo Musical</h2>
+            <p>Aqui podras registrar tus proyectos musicales. ¡Animate y empieza ahora!</p>
+            <form>
+                <label>Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre de su proyecto musical">
+                <label>Genero: </label>
+                <select name="genero" id="genero">
+                    <option>Rock</option>
+                    <option>Pop</option>
+                    <option>Pop Alternativo</option>
+                    <option>Electronica</option>
+                    <option>Regaeton</option>
+                    <option>Jazz</option>
+                    <option>Otro</option>
+                </select>
+                <label>Integrantes: </label>
+                <input type="number" name="integrantes" id="integrantes" placeholder="Ingrese numero de integrantes">
+                <label>Nivel de Experiencia: </label>
+                <input type="checkbox" name="experiencia" id="experiencia">¿Es principiante?
+                <label>Plataformas: </label>
+                    <input type="radio" name="plataforma" id="spotify">Spotify
+                    <input type="radio" name="plataforma" id="youtube">Youtube
+                    <input type="radio" name="plataforma" id="otro">Otro
+                <label>Enlace del Proyecto: </label>
+                <input type="url" name="enlace" id="enlace" placeholder="https://ejemplo.com">
+                <label>Fecha de Inicio: </label>
+                <input type="date" name="fecha" id="fecha">
+                <label>Descripcion: </label>
+                <textarea name="descripcion" id="descripcion" rows="8"></textarea>
+                <label>Correo: </label>
+                <input type="email" name="correo" id="correo">
+                <button id="btnRegistrar">Registrar</button>
+            </form>
+        </section>
+
+
+    </main>
+    <footer id="contacto">
+        <p>&copy; 2024 STARMusic. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@starmusic.com">info@starmusic.com</a></p>
+    </footer>
+    <script src="assets/js/Script.js" type="module"></script>
+    <script src="assets/js/contraste.js"></script>
 </body>
 </html>
